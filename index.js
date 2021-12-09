@@ -32,4 +32,4 @@ repos.listen(port, () => {
     console.log(`node-git-server running at http://localhost:${port}`)
 });
 module.exports = repos;
-module.exports.handler = serverless(repos);
+module.exports.handler = serverless(Server);
