@@ -149,3 +149,9 @@ repos.listen(port, {
   if (error) return console.error(`failed to start git-server because of error ${error}`);
 
 });
+var express = require("express");
+var app = express();
+var port = 8080;
+app.get('/killserver/', function(req,res){
+  //Kills the server after killing the things and doing clean up
+});
